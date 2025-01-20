@@ -6,7 +6,7 @@ import { Separator } from "./ui/separator";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="flex justify-between items-center py-3 shadow-md">
+    <nav className="flex justify-start gap-36 items-center py-3 shadow-md">
       <div className="flex items-center border-1 bg-slate-100 rounded-r-xl gap-4">
         <Link to="/" className="flex items-center gap-4 ml-4">
           <img src={GrafanaPNG} alt="" className="h-16" />
@@ -15,26 +15,24 @@ const Navbar: React.FC = () => {
           </h2>
         </Link>
       </div>
+      <div className="flex justify-between w-full">
       <ul className="flex gap-4">
-        <li>
-          <a href="/">Docs</a>
+        <li className="font-montregular hover:underline hover:text-green-600 hover:font-montbold">
+          <a href="/docs">Docs</a>
         </li>
         <Separator orientation="vertical"/>
-        <li>
+        <li className="font-montregular hover:underline hover:text-green-600 hover:font-montbold">
           <a href="/about">Faq</a>
         </li>
         <Separator orientation="vertical"/>
-        <li>
+        <li className="font-montregular hover:underline hover:text-green-600 hover:font-montbold">
           <a href="/contact">Elements</a>
         </li>
       </ul>
       <div className="px-5 flex gap-4">
         <button className="bg-green-400 border-slate-700 border-2 rounded-xl px-4 py-2 hover:bg-slate-400 duration-200">
-          Entre em contato
         </button>
-        <button className="bg-slate-500 border-slate-700 border-2 rounded-xl px-4 py-2 hover:bg-slate-200 duration-200">
-          Changelog
-        </button>
+      </div>
       </div>
     </nav>
   );
