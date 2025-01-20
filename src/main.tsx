@@ -11,7 +11,7 @@ createRoot(document.getElementById('root')!).render(
       <div className="flex">
         <main className="flex-grow transition-opacity duration-500 ease-out">
           <Routes>
-            <Route path="https://doc-page-mu.vercel.app/" element={<MainPage />} />
+            <Route path="/" element={<MainPage />} />
             <Route path="https://doc-page-mu.vercel.app/docs/:id" element={<MainDoc />} />
           </Routes>
         </main>
