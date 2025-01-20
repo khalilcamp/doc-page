@@ -2,7 +2,6 @@
   "name": "grafana-docs",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://khalilcamp.github.io/doc-page/",
   "type": "module",
   "scripts": {
     "start": "vite",
