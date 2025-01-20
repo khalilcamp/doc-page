@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom"; // Importando o useParams para capturar parâmetros da URL
 import DocsSideBar from "@/components/docs-sidebar";
 import Navbar from "@/components/navbar";
 import { Separator } from "@/components/ui/separator";
@@ -79,53 +80,60 @@ const docContent = [
     title: "Setup",
     content:
       "Esse tópico trará detalhes importantes de como começar a usar o Grafana.",
-    contentadd:
+    contentadd: (
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-montbold">Login Grafana</h1>
         <ul className="flex flex-col justify-center items-center gap-4">
-          <Separator/>
+          <Separator />
           <li>
             1. Ao entrar no link fornecido para o Grafana, você irá se deparar com essa página:
           </li>
-          <Separator/>
+          <Separator />
           <img src={GrafLogin} alt="" className="w-1/2" />
-          <Separator/>
-          <li>
-            2. Você deverá colocar o seu login como designado por quem fez o seu acesso.
-          </li>
+          <Separator />
+          <li>2. Você deverá colocar o seu login...</li>
         </ul>
-      </div>,
+      </div>
+    ),
   },
 ];
 
 function MainDoc() {
+  const { id } = useParams<{ id: string }>(); 
   const [selectedId, setSelectedId] = useState<number | null>(null);
 
-  // Filtra o conteúdo baseado no id selecionado
+  
+  useEffect(() => {
+    if (id) {
+      setSelectedId(parseInt(id)); 
+    }
+  }, [id]);
+
+
   const selectedContent = docContent.find((item) => item.id === selectedId);
 
   return (
     <div className="flex flex-col h-screen">
       <Navbar />
-      <Separator/>
+      <Separator />
       <div className="flex flex-row">
-        <DocsSideBar onItemClick={setSelectedId} /> {/* Passa a função para atualizar o id */}
-        <Separator orientation="vertical"/>
+        <DocsSideBar onItemClick={setSelectedId} />
+        <Separator orientation="vertical" />
         <div className="flex-1 p-4">
           {selectedContent ? (
             <div className="flex flex-col gap-4">
               <h1 className="font-montbold text-4xl text-white">
                 {selectedContent.title}
               </h1>
-              <Separator/>
+              <Separator />
               <p className="font-montregular text-sm text-white">
                 {selectedContent.content}
               </p>
-              <Separator/>
+              <Separator />
               <p className="font-montregular text-sm text-white">
                 {selectedContent.contentadd}
               </p>
-              <Separator/>
+              <Separator />
             </div>
           ) : (
             <p className="text-white">Selecione um item no menu.</p>

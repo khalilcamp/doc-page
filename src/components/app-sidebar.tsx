@@ -21,7 +21,7 @@ const items = [
   },
   {
     title: "Docs",
-    url: "../docs",
+    url: "/docs/1",
     icon: Search,
   }
 ]

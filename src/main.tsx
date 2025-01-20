@@ -12,7 +12,7 @@ createRoot(document.getElementById('root')!).render(
         <main className="flex-grow transition-opacity duration-500 ease-out">
           <Routes>
             <Route path="/" element={<MainPage />} />
-            <Route path="/docs" element={<MainDoc />} />
+            <Route path="/docs/:id" element={<MainDoc />} />
           </Routes>
         </main>
       </div>

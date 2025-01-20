@@ -12,30 +12,30 @@ const cardContent = [
   {
     title: "Iniciando com Grafana",
     description: "Não sabe por onde começar? Este guia é para você!",
-    content: "/guia-grafana",
+    content: "/docs/1",
     linkText: "Acessar o Guia",
-    icon: <FaChartBar className="text-blue-500 text-3xl" />, // Ícone personalizado
+    icon: <FaChartBar className="text-blue-500 text-3xl" />, 
   },
   {
     title: "Configuração Avançada",
     description: "Explore opções avançadas e potencialize seu uso.",
     content: "/configuracao-avancada",
     linkText: "Configurações",
-    icon: <FaCogs className="text-green-500 text-3xl" />, // Ícone personalizado
+    icon: <FaCogs className="text-green-500 text-3xl" />, 
   },
   {
     title: "Monitoramento",
     description: "Descubra como monitorar seus sistemas com eficiência.",
     content: "/monitoramento",
     linkText: "Ir para Monitoramento",
-    icon: <FaEye className="text-purple-500 text-3xl" />, // Ícone personalizado
+    icon: <FaEye className="text-purple-500 text-3xl" />,
   },
   {
     title: "Integrações",
     description: "Aprenda a integrar ferramentas externas ao Grafana.",
     content: "/integracoes",
     linkText: "Explorar Integrações",
-    icon: <FaPlug className="text-red-500 text-3xl" />, // Ícone personalizado
+    icon: <FaPlug className="text-red-500 text-3xl" />,
   },
 ];
 
