@@ -1,24 +1,21 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './output.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainPage from './pages/mainPage.tsx';
-import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
-import { AppSidebar } from './components/app-sidebar.tsx';
-import Footer from './components/Footer.tsx';
+import MainDoc from './pages/mainDoc.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <div className="flex">
-      <SidebarProvider>
-        <div className="flex-shrink-0 transition-transform duration-500 ease-out">
-          <AppSidebar  />
-        </div>
+    <BrowserRouter>
+      <div className="flex">
         <main className="flex-grow transition-opacity duration-500 ease-out">
-          <SidebarTrigger />
-          <MainPage />
-          <Footer />
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route path="/docs" element={<MainDoc />} />
+          </Routes>
         </main>
-      </SidebarProvider>
-    </div>
+      </div>
+    </BrowserRouter>
   </StrictMode>
 );

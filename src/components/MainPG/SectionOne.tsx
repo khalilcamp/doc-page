@@ -1,6 +1,7 @@
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import MonitorIMG from "../../assets/Startup-Business-Strategy-1200x885.png";
+// import List from "../List";
 
 function SectionOne(){
     return (
@@ -14,6 +15,7 @@ function SectionOne(){
                     <Input className="w-1/2 border-r-8 font-smoochregular text-black" type="search" placeholder="Procure na documentação" id="searchWiki"/>
                     <Button className="bg-slate-900 border-r-2" id="searchWiki" >Buscar</Button>
                 </div>
+                {/* <List/> */}
             </div>
             <div>
                 <div className="flex w-full h-full">
