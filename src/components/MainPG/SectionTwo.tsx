@@ -3,10 +3,10 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { GoAlert } from "react-icons/go";
 
 const cardContent = [
   {
@@ -41,15 +41,16 @@ const cardContent = [
 
 function SectionTwo() {
   return (
-    <div className="px-12 py-12 mx-2 mt-12 border rounded-t-lg bg-black flex flex-col justify-center gap-14">
-      <div>
-        <h1 className="font-smoochregular text-5xl text-white">Inicie aqui:</h1>
+    <div className="px-12 py-12 mt-12 border rounded-t-lg bg-neutral-950 flex flex-col justify-center gap-14">
+      <div className="flex items-center gap-4">
+        <GoAlert size={40}/>
+        <h1 className="font-montsemi text-4xl text-white">Tópicos mais acessados:</h1>
       </div>
       <div className="flex flex-row justify-center gap-12">
         {cardContent.map((card, index) => (
-          <Card key={index} className="mb-4 h-60 w-1/4 bg-white py-5 ">
+          <Card key={index} className="mb-4 h-60 w-1/4 bg-white py-5 font-montregular flex flex-col items-start justify-center">
             <CardHeader>
-              <div className="flex items-start gap-2">
+              <div className="flex items-start">
                 {card.icon}
               </div>
               <CardTitle>{card.title}</CardTitle>
@@ -58,7 +59,7 @@ function SectionTwo() {
             <CardContent>
               <a
                 href={card.content}
-                className="text-blue-500 underline hover:text-blue-700"
+                className="text-green-500 hover:text-green-700"
               >
                 {card.linkText}
               </a>

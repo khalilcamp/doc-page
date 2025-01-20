@@ -27,6 +27,27 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'MontRegular';
+  src: url('./fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontSemiBold';
+  src: url('./fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: semibold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontBold';
+  src: url('./fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: bold;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -105,7 +126,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    @apply bg-gray-950;
+    @apply bg-neutral-950;
     @apply text-gray-100;
   }
 }

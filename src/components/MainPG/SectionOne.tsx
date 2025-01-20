@@ -4,10 +4,10 @@ import MonitorIMG from "../../assets/Startup-Business-Strategy-1200x885.png";
 
 function SectionOne(){
     return (
-        <div className=" bg-white flex h-96 w-full justify-evenly border rounded-b-3xl py-5">
+        <div className=" flex h-96 w-full justify-evenly border py-5 shadow-md">
             <div className="ml-12 flex flex-col gap-4 justify-center items-start w-1/2 px-2">
-                <h1 className="font-smoochregular font-semibold text-4xl w-1/2 text-slate-950">Vamos iniciar nossa documentação com Grafana</h1>
-                <p className="w-1/2 font-smoochbold text-lg text-slate-800">Grafana é uma plataforma open source de Analise e visualização interativa. É possível produzir gráficos, alertas
+                <h1 className="font-montregular text-4xl w-1/2">Vamos iniciar nossa documentação com Grafana</h1>
+                <p className="w-1/2 font-montsemi text-sm ">Grafana é uma plataforma open source de Analise e visualização interativa. É possível produzir gráficos, alertas
                     o que sua imaginação preferir!
                 </p>
                 <div className="w-1/2 flex gap-2">

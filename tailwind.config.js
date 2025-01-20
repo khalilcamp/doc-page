@@ -7,6 +7,9 @@ module.exports = {
 		fontFamily: {
 		  smoochregular: ['SmoochSansRegular'],
 		  smoochbold: ['SmoochSansBold'],
+		  montregular: ['MontRegular'],
+		  montsemi: ['MontSemiBold'],
+		  montbold: ['MontBold']
 		},
 		colors: {
 		  background: 'hsl(var(--background))',

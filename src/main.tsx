@@ -2,7 +2,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './output.css';
 import MainPage from './pages/mainPage.tsx';
-import { SidebarProvider, SidebarTrigger, Sidebar } from '@/components/ui/sidebar';
+import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
 import { AppSidebar } from './components/app-sidebar.tsx';
 import Footer from './components/Footer.tsx';
 
