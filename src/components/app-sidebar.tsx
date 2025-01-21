@@ -23,7 +23,17 @@ const items = [
     title: "Docs",
     url: "/docs/1",
     icon: Search,
-  }
+  },
+  {
+    title: "Faq",
+    url: "/faq",
+    icon: Search,
+  },
+  {
+    title: "Sobre",
+    url: "/about",
+    icon: Search,
+  },
 ]
 
 export function AppSidebar() {
@@ -35,10 +45,6 @@ export function AppSidebar() {
           </SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
-            <div className="flex items-center border-1 bg-slate-100 rounded-r-xl gap-4">
-                <img src={GrafanaPNG} alt="" className='h-12' />
-                <h2 className='pr-2 font-smoochregular text-xl font-semibold text-gray-800'>Grafana Documentação</h2>
-            </div>
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>

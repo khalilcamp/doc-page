@@ -5,7 +5,7 @@ import MonitorIMG from "../../assets/Startup-Business-Strategy-1200x885.png";
 
 function SectionOne(){
     return (
-        <div className=" flex h-96 w-full justify-evenly border py-5 shadow-md">
+        <div className=" flex h-96 w-full justify-evenly border rounded-lg py-5 shadow-md">
             <div className="ml-12 flex flex-col gap-4 justify-center items-start w-1/2 px-2">
                 <h1 className="font-montregular text-4xl w-1/2">Vamos iniciar nossa documentação com Grafana</h1>
                 <p className="w-1/2 font-montsemi text-sm ">Grafana é uma plataforma open source de Analise e visualização interativa. É possível produzir gráficos, alertas

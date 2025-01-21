@@ -41,7 +41,7 @@ const cardContent = [
 
 function SectionTwo() {
   return (
-    <div className="px-12 py-12 mt-12 border rounded-t-lg bg-neutral-950 flex flex-col justify-center gap-14">
+    <div className="px-12 py-12 mt-12 border rounded-t-lg flex flex-col justify-center gap-14">
       <div className="flex items-center gap-4">
         <GoAlert size={40}/>
         <h1 className="font-montsemi text-4xl text-white">Tópicos mais acessados:</h1>

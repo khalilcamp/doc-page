@@ -24,10 +24,6 @@ const Navbar: React.FC = () => {
         <li className="font-montregular hover:underline hover:text-green-600 hover:font-montbold">
           <a href="/about">Faq</a>
         </li>
-        <Separator orientation="vertical"/>
-        <li className="font-montregular hover:underline hover:text-green-600 hover:font-montbold">
-          <a href="/contact">Elements</a>
-        </li>
       </ul>
       <div className="px-5 flex gap-4">
         <button className="bg-green-400 border-slate-700 border-2 rounded-xl px-4 py-2 hover:bg-slate-400 duration-200">

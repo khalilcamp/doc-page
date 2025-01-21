@@ -4,6 +4,7 @@ import DocsSideBar from "@/components/docs-sidebar";
 import Navbar from "@/components/navbar";
 import { Separator } from "@/components/ui/separator";
 import GrafLogin from "../assets/graf_login.png";
+import GrafSimpleDash from "../assets/complex-dashboard-example.png"
 
 // Conteúdo dos documentos
 const docContent = [
@@ -96,6 +97,71 @@ const docContent = [
       </div>
     ),
   },
+  {
+    id: 3,
+    title: "Overview de Dashboard",
+    content:
+      "Uma dashboard, da maneira mais crua o possível, é nosso visualizador de paineis, tal como um carro, abaixo, uma dashboard simples.",
+    contentadd: (
+      <div className="flex flex-col gap-4 justify-center items-center">
+        <img src={GrafSimpleDash} alt="" className="w-1/3" />
+        <h1 className="text-2xl font-montbold">Dashboards</h1>
+        <p>
+          Dashboards são coleções de painéis, e cada painel é uma visualização de dados. 
+          Você pode ter muitos painéis em um dashboard. 
+          Cada painel pode ter muitos gráficos, tabelas, listas e muito mais.
+          Esses paineis são criados com dados crus de uma source de dados que os transforma em algo visual.
+          O processo envolve passar dados por 3 "portões": um plugin, uma query e uma transformação OPCIONAL.
+        </p>
+        <Separator/>
+        <h1 className="text-2xl font-montbold">
+          Fontes de dados
+        </h1>
+        <p>
+          São qualquer entidade que possui dados. Pode ser uma base SQL, Loki, Mimir ou até mesmo uma API baseada em JSON, com alguns casos, até mesmo arquivos CSV (Excel)
+        </p>
+        <Separator/>
+        <h1 className="text-2xl font-montbold">
+          Plugins
+        </h1>
+        <p>
+          Um plugin é um software que adiciona novas capacidades ao Grafana. Eles possuem varios tipos, com o foco sendo primariamente em plugins de DADOS, de pegar uma query colocada, trazer os dados e reconciliar as diferenças. Ele faz isso usando uma estrutura de dados chamada Data Frame
+        </p>
+        <Separator/>
+        <h1 className="text-2xl font-montbold">
+          Query
+        </h1>
+        <p>
+          Queries te permitem reduzir a quantia de dados para um dataset especifico, trazendo uma visualização mais facil de gerenciar. Quando trabalhando com bancos de dados, é crucial reconhecer que cada um possui sua propria linguagem de query. Uma query é uma fundação de cada visualização no Grafana e cada dashboard pode usar um leque de linguagens de query.
+        </p>
+        <Separator/>
+        <h1 className="text-2xl font-montbold">
+          Transformações 
+        </h1>
+        <p>
+          Quando os dados da visualização não são do agrado, é possível aplicas TRANSFORMAÇÕES para manipular os dados. É util nas seguintes situações:
+          <li>
+            Quando é necessário combinar 2 campos.
+          </li>
+          <li>
+          Você possui dados CSV e quer converter para field.
+          </li>
+          <li>
+          Você quer filtrar, dar join, merge ou performar operações SQL.
+          </li>
+        </p> 
+        <Separator/>
+        <h1 className="text-2xl font-montbold">
+          Paineis
+        </h1>
+        <p>
+          Depois de todos os dados serem processados, eles são passados à um painel, que é o portão final para uma visualização.
+          Um painel é um container que mostra a visualização e te provê com controle para a manipulação.
+          A configuração é onde é especificado como deve ser visto os dados.
+        </p>
+      </div>
+    ),
+  }
 ];
 
 function MainDoc() {

@@ -4,7 +4,26 @@ import { GoAlert } from "react-icons/go";
 const sideBarContent = [
   { title: "1. Sobre o Grafana", icon: <GoAlert size={10} />, id: 1 },
   { title: "1.1. Setup", icon: <GoAlert size={10} />, id: 2 },
-  // Adicione mais itens conforme necessário
+  { title: "2. Overview", icon: <GoAlert size={10} />, id: 3 },
+  { title: "2.1. Introdução à time series.", icon: <GoAlert size={10} />, id: 4 },
+  { title: "2.2. Introdução à historiograma e heatmaps.", icon: <GoAlert size={10} />, id: 5 },
+  { title: "2.3. Glossario", icon: <GoAlert size={10} />, id: 6 },
+  { title: "3. Data Sources / Bancos de Dados", icon: <GoAlert size={10} />, id: 7 },
+  { title: "3.1. Alertmanager", icon: <GoAlert size={10} />, id: 8 },
+  { title: "3.2. PostgreSQL", icon: <GoAlert size={10} />, id: 9 },
+  { title: "3.3. Loki", icon: <GoAlert size={10} />, id: 10 },
+  { title: "3.4. Graphite", icon: <GoAlert size={10} />, id: 11 },
+  { title: "4. Dashboards", icon: <GoAlert size={10} />, id: 12 },
+  { title: "4.1. Usando Dashboards", icon: <GoAlert size={10} />, id: 13 },
+  { title: "4.2. Construindo Dashboards", icon: <GoAlert size={10} />, id: 14 },
+  { title: "4.3. Importar Dashboards", icon: <GoAlert size={10} />, id: 6 },
+  { title: "4.4. Modificar configurações", icon: <GoAlert size={10} />, id: 6 },
+  { title: "4.5. Links de Dashboards", icon: <GoAlert size={10} />, id: 6 },
+  { title: "4.6. Variaveis", icon: <GoAlert size={10} />, id: 6 },
+  { title: "4.7. Bibliotecas", icon: <GoAlert size={10} />, id: 6 },
+  { title: "4.8. Modelos JSON", icon: <GoAlert size={10} />, id: 6 },
+  { title: "4.9. Boas práticas", icon: <GoAlert size={10} />, id: 6 },
+  
 ];
 
 interface DocsSideBarProps {
