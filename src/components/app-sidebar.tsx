@@ -1,5 +1,4 @@
 import { Home, Search } from "lucide-react"
-import GrafanaPNG from "../assets/grafanalogo.png"
 
 import {
   Sidebar,
